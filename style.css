@@ -1,14 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
 
 *{
     box-sizing: border-box;
+}
+
+:root{
+    --primary-color: #133fae;
 }
 
 body{
     background-color: #fdfdfd;
     color: #2e2e3e;
     overflow-x: hidden;
-    font-family: Lato, sans-serif;
+    font-family: Nunito, sans-serif;
 }
 
 p{
@@ -24,5 +28,61 @@ h5{
 }
 
 button{
-    font-family: Lato, sans-serif;
+    font-family: Nunito, sans-serif;
+}
+
+.text-bold{
+    font-weight: 700;
+}
+
+
+.btn{
+    font-weight: 700;
+    transition: 400ms ease;
+}
+
+.text-primary{
+    color: var(--primary-color);
+}
+
+.bg-primary{
+    background-color: var(--primary-color);
+}
+
+.btn-primary{
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-primary:hover, .btn-primary:focus{
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    filter: brightness(1.2);
+}
+
+.nav-pills{
+    flex-direction: column;
+    text-align: center;
+}
+
+
+.nav-pills a{
+    color: #5e5e6d;
+}
+
+.nav-pills .nav-link{
+    border-bottom: 1px #e4e4e4 solid;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #2e2e3e;
+    background-color: transparent;
+    border-bottom: 3px solid #a00507;
+    border-radius: 0;
+}
+
+@media(min-width:768px){
+    .nav-pills{
+        flex-direction: row;
+    }
 }
