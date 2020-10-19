@@ -60,6 +60,22 @@ button{
     filter: brightness(1.2);
 }
 
+.full-width{
+    width: 100%;
+}
+
+.card{
+    border-radius: 6px;
+    border-width: 1px;
+}
+
+.card-img-top{
+    width: 40%;
+    margin-top: 2rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+
 .nav-pills{
     flex-direction: column;
     text-align: center;
