@@ -46,7 +46,7 @@ button{
 }
 
 .bg-primary{
-    background-color: var(--primary-color);
+    background-color: var(--primary-color) !important;
 }
 
 .btn-primary{
@@ -95,6 +95,10 @@ button{
     background-color: transparent;
     border-bottom: 3px solid #a00507;
     border-radius: 0;
+}
+
+.panel-body-alert{
+    letter-spacing: 2px;
 }
 
 @media(min-width:768px){
